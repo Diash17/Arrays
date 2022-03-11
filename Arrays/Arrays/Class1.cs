@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework
 {
-    static class Arrays
+    public static class Arrays
     {
         public static int[] GenerateArray(int lenght)
         {
@@ -222,6 +222,22 @@ namespace Homework
                 }
             }
             return a;
+        }
+
+          public static int[] DoInsertSort(int[] a)
+        {
+            int[] result = Clone(a);
+            for (int i = 1; i < result.Length; i++)
+            {
+                int current = i;
+                while (current != 0 || result[current] < result[current - 1])
+                {
+                    int tmp = result[current];
+                    result[current - 1] = tmp;
+                    current--;
+                }
+            }
+            return result;
         }
 
 
