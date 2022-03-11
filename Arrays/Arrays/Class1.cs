@@ -204,5 +204,26 @@ namespace Homework
             }
             return result;
         }
+
+        public static int[] DoBubbleSort(int[] a)
+        {
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        int tmp = a[i];
+                        a[i] = a[j];
+                        a[j] = tmp;
+                    }
+
+                }
+            }
+            return a;
+        }
+
+
     }
 }
