@@ -15,14 +15,20 @@ using Homework;
 //a = Arrays.DoReverseOfArray(a);
 //Arrays.WriteArray(a);
 
-///* Test ChangePlacesOfTwoPartsOfArrange */
+/* Test ChangePlacesOfTwoPartsOfArrange */
 //int[] a = Arrays.GenerateArray(4);
 //Arrays.WriteArray(a);
 //a = Arrays.ChangePlacesOfTwoPartsOfArrange(a);
 //Arrays.WriteArray(a);
 
 /* Test DoBubbleSort */
+//int[] a = Arrays.GenerateArray(10);
+//Arrays.WriteArray(a);
+//a = Arrays.DoBubbleSort(a);
+//Arrays.WriteArray(a);
+
+/* TestDoInsertSort */
 int[] a = Arrays.GenerateArray(10);
 Arrays.WriteArray(a);
-a = Arrays.DoBubbleSort(a);
+a = Arrays.DoInsertSort(a);
 Arrays.WriteArray(a);

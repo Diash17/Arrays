@@ -226,16 +226,18 @@ namespace Homework
 
           public static int[] DoInsertSort(int[] a)
         {
-            int[] result = Clone(a);
+            int[] result = (int[])a.Clone();
             for (int i = 1; i < result.Length; i++)
             {
                 int current = i;
-                while (current != 0 || result[current] < result[current - 1])
+                while (current != 0 && result[current] < result[current - 1])
                 {
                     int tmp = result[current];
+                    result[current] = result[current - 1];
                     result[current - 1] = tmp;
                     current--;
                 }
+                
             }
             return result;
         }
